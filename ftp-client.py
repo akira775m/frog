@@ -41,6 +41,6 @@ while True:
         print("文件传输完毕")
         md5=(sk.recv(500).decode())
         print (file,"服务端MD5:",md5)
-        print (file,"客户端MD5",m.hexdigest())
+        print (file + ".new","客户端MD5",m.hexdigest())
         f.close()
 sk.close()
